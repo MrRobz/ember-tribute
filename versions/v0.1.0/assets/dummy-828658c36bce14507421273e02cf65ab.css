@@ -1,0 +1,1 @@
+.input-test textarea,input{border:1px solid gray;width:100%}.input-test .test-content-editable{border:1px dashed #00f}[contenteditable=true]:empty::before{content:attr(placeholder)}
