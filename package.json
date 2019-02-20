@@ -1,11 +1,14 @@
 {
   "name": "ember-tribute",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Ember component for zurb/tribute.js",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "tribute",
+    "tributejs",
+    "ember-tribute"
   ],
-  "repository": "",
+  "repository": "https://github.com/MalayaliRobz/ember-tribute",
   "license": "MIT",
   "author": "",
   "directories": {
