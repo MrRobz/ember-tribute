@@ -11,9 +11,5 @@ module.exports = {
     if (!hasSass) {
       app.import('vendor/tribute.css');
     }
-  },
-  
-  isDevelopingAddon() {
-    return true
   }
 };

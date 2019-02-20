@@ -1,0 +1,14 @@
+You can pass a action tributeReplaced to the component which acts as the callback for tribute-replaced event emitted by Tribute.
+{{#docs-demo class='input-test' as |demo|}}
+  {{#demo.example name='tribute-replaced-demo.hbs'}}
+    {{#ui-tribute options=replacedDemoOptions 
+      tributeReplaced=(action 'tributeReplaced')}}
+      <input placeholder='Try to @mention someone…'>
+    {{/ui-tribute}}
+
+    Email of last added Item: {{replacedItemEmail}}
+  {{/demo.example}}
+
+  {{demo.snippet 'tribute-replaced-demo.hbs'}}
+  {{demo.snippet 'tribute-replaced-demo.js' label='component.js'}}
+{{/docs-demo}}

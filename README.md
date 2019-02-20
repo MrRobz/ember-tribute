@@ -42,13 +42,15 @@ The **ui-tribute**  component will bind tributejs to the textarea that you pass 
 The **ui-tribute**  component takes all options that [zurb/tribute](https://github.com/zurb/tribute) expects. 
 
 
-Events
+Arguments and Events
 --------------------------------------------------------------------------------
-You can pass a action **tributeReplaced** to  like {{#ui-tribute tributeReplaced=(action 'someaction')}} to the component which acts as the collback for tribute-replaced event emitted by Tribute.
+You can pass a action **tributeReplaced** to  like {{#ui-tribute tributeReplaced=(action 'someaction')}} to the component which acts as the callback for tribute-replaced event emitted by Tribute.
 
-Similarly you can pass a action **tributeNoMatch** to  like {{#ui-tribute tributeNoMatch=(action 'someaction')}} to the component which acts as the collback for tributeNoMatch event emitted by Tribute.
+Similarly you can pass a action **tributeNoMatch** to  like {{#ui-tribute tributeNoMatch=(action 'someaction')}} to the component which acts as the callback for tributeNoMatch event emitted by Tribute.
 
-If you wish to get the Tribute instance itself, pass an action registerTributeInstance to the component like {{#ui-tribute registerTributeInstance=(action 'someaction')}} and the action will be called with the Tribute instance object as its parameter.
+If you wish to get the Tribute instance itself, pass an action **registerTributeInstance** to the component like {{#ui-tribute registerTributeInstance=(action 'someaction')}} and the action will be called with the Tribute instance object as its parameter.
+
+For nested components in yield use **target** to pass the query selector string for the elment for Tribute to be attached to. 
 
 License
 ------------------------------------------------------------------------------

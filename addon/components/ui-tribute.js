@@ -31,7 +31,7 @@ export default Component.extend({
         }
       });
 
-      targetDom.addEventListener('tribute-no-match', function (e) {
+      targetDom.addEventListener('tribute-no-match', (e) => {
         if (this.tributeNoMatch) {
           this.tributeNoMatch(e);
         }

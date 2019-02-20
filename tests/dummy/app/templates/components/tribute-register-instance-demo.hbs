@@ -1,0 +1,12 @@
+in registerTributeInstance callback you get get original Tribute instance itself as its argument
+{{#docs-demo class='input-test' as |demo|}}
+  {{#demo.example name='tribute-register-instance-demo.hbs'}}
+    {{#ui-tribute options=replacedDemoOptions 
+              registerTributeInstance=(action 'registerTributeInstance')}}
+      <input placeholder='try typing @'>
+    {{/ui-tribute}}
+  {{/demo.example}}
+
+  {{demo.snippet 'tribute-register-instance-demo.hbs'}}
+  {{demo.snippet 'tribute-register-instance-demo.js' label='component.js'}}
+{{/docs-demo}}

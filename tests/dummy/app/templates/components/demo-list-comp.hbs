@@ -1,0 +1,50 @@
+<h2>Tribute on textarea element:</h2>
+
+{{#docs-demo class='input-test' as |demo|}}
+  {{#demo.example name='tribute-on-text-area.hbs'}}
+    {{#ui-tribute options=textAreaOptions}}
+      <textarea placeholder='Try to @mention someone…'></textarea>
+    {{/ui-tribute}}
+  {{/demo.example}}
+
+  {{demo.snippet 'tribute-on-text-area.hbs'}}
+  {{demo.snippet 'tribute-on-text-area.js' label='component.js'}}
+{{/docs-demo}}
+
+<h2>Tribute on nested textareas:</h2>
+
+{{#docs-demo class='input-test' as |demo|}}
+  {{#demo.example name='tribute-on-nested-text-area.hbs'}}
+    {{#ui-tribute options=textAreaOptions target='#sample-text-area'}}
+      <div style='padding: 20px, backgroundColor: #333'>
+        <div>
+          <textarea id='sample-text-area' placeholder='Try to @mention someone…'></textarea>
+        </div>
+      </div>
+    {{/ui-tribute}}
+  {{/demo.example}}
+
+  {{demo.snippet 'tribute-on-nested-text-area.hbs'}}
+  {{demo.snippet 'tribute-on-nested-text-area.js' label='component.js'}}
+{{/docs-demo}}
+
+<h2>Tribute on contentEditable:</h2>
+{{#docs-demo class='input-test' as |demo|}}
+  {{#demo.example name='tribute-on-content-editable.hbs'}}
+    {{#ui-tribute options=contentEditableOptions}}
+      <div class='test-content-editable' placeholder='try to @mention someone...'></div>
+    {{/ui-tribute}}
+  {{/demo.example}}
+
+  {{demo.snippet 'tribute-on-content-editable.hbs'}}
+  {{demo.snippet 'tribute-on-content-editable.js' label='component.js'}}
+{{/docs-demo}}
+
+<h2>tributeReplaced callback example:</h2>
+{{tribute-replaced-demo}}
+
+<h2>tributeNoMatch callback example:</h2>
+{{tribute-no-match-demo}}
+
+<h2>registerTributeInstance callback example:</h2>
+{{tribute-register-instance-demo}}
