@@ -48,6 +48,8 @@ You can pass a action **tributeReplaced** to  like {{#ui-tribute tributeReplaced
 
 Similarly you can pass a action **tributeNoMatch** to  like {{#ui-tribute tributeNoMatch=(action 'someaction')}} to the component which acts as the collback for tributeNoMatch event emitted by Tribute.
 
+If you wish to get the Tribute instance itself, pass an action registerTributeInstance to the component like {{#ui-tribute registerTributeInstance=(action 'someaction')}} and the action will be called with the Tribute instance object as its parameter.
+
 License
 ------------------------------------------------------------------------------
 
