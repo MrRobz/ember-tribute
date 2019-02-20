@@ -21,6 +21,10 @@ You can simply wrap any textarea, input, or contenteditable element with ui-trib
 
 *** refer [Tribute](https://github.com/zurb/tribute#a-collection) for all the available options ***
 
+Ember tribute injects tribute necessary styles to your project.
+
+However if you are using SASS you have to manually include them in your styles with: `@import 'tribute';`
+
 ## Other argument for the component include
 ---
 
