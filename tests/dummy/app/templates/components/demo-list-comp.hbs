@@ -13,6 +13,7 @@
 
 <h2>Tribute on nested textareas:</h2>
 
+{{! template-lint-disable no-inline-styles }}
 {{#docs-demo class='input-test' as |demo|}}
   {{#demo.example name='tribute-on-nested-text-area.hbs'}}
     {{#ui-tribute options=textAreaOptions target='#sample-text-area'}}
@@ -27,6 +28,7 @@
   {{demo.snippet 'tribute-on-nested-text-area.hbs'}}
   {{demo.snippet 'tribute-on-nested-text-area.js' label='component.js'}}
 {{/docs-demo}}
+{{! template-lint-enable no-inline-styles }}
 
 <h2>Tribute on contentEditable:</h2>
 {{#docs-demo class='input-test' as |demo|}}
