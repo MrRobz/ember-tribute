@@ -1,3 +1,6 @@
+[![ ](https://img.shields.io/npm/v/ember-tribute.svg)](https://www.npmjs.com/package/ember-tribute) 
+[![ ](http://emberobserver.com/badges/ember-tribute.svg)](https://emberobserver.com/addons/ember-tribute)
+
 ember-tribute
 ==============================================================================
 
