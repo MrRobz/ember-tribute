@@ -41,10 +41,11 @@ export default Component.extend({
 
   willDestroyElement() {
     this._super(...arguments);
+    let targetDom = this.getTargetDom();
     run(() => {
       let tribute = get(this, 'tribute');
       tribute.hideMenu();
-      tribute.detach(this.getTargetDom());
+      tribute.detach(targetDom);
     });
   },
 
